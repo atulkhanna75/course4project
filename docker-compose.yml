@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  springboot-container:
+    build: .
+    image: atulkhanna75/spring-boot:v1
+    container_name: springboot-container 
+    ports:
+      - 9090:9090
+    restart: always
